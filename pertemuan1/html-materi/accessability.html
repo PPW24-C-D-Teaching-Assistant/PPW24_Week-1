@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aksesibilitas HTML dengan ARIA</title>
+</head>
+<body>
+    <header>
+        <h1>Halaman Utama</h1>
+        <nav aria-label="Menu Utama">
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Tentang Kami</h2>
+            <p>Ini adalah contoh teks deskripsi tentang perusahaan kami.</p>
+        </section>
+        
+        <section>
+            <h2>Link</h2>
+            <ul role="list">
+                <li role="listitem">
+                    <h3><a href="#" aria-label="Tautan ini akan membawa Anda ke halaman produk 1">Produk 1</a></h3>
+                    <img src="assets/images/bag.jpg" alt="Gambar Tas Ransel Hitam" style="width:30%; height:auto;" aria-label="Ini adalah gambar tas ransel berwarna hitam.">
+                    <p>Deskripsi produk 1.</p>
+                </li>
+                <li role="listitem">
+                    <h3><a href="#">Produk 2</a></h3>
+                    <img src="assets/images/hoodie.jpg" alt="Gambar Jaket Abu-Abu" style="width:30%; height:auto;" aria-label="Ini adalah gambar jaket berwarna abu-abu.">
+                    <p>Deskripsi produk 2.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h1>Span</h1>
+            <!-- Span yang dapat menerima fokus keyboard -->
+            <span role="button" tabindex="0" aria-label="Ini span button yang dapat menerima fokus keyboard" onclick="alert('Tombol ditekan!')">Klik di sini</span><br><br>
+            
+            <!-- Span yang tidak dapat menerima fokus keyboard -->
+            <span role="button" aria-label="Ini span button yang tidak menerima fokus keyboard" onclick="alert('Tombol ditekan!')">Klik di sini (ga pake aria)</span><br><br>
+
+            <h2>Button</h2>
+            <button id="darkModeButton" aria-pressed="false"  aria-label="Ini button dengan area-pressed false">
+                Klik di sini
+            </button><br><br>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Perusahaan ABC</p>
+        <address>
+            Alamat: Jalan Contoh No. 123, Kota ABC, Negara XYZ<br>
+            Telepon: 123-456-7890
+        </address>
+    </footer>
+</body>
+</html>
