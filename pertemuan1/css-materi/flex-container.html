@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container1 {
+  display: flex;
+  background-color: DodgerBlue;
+}
+
+.flex-container2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container3 {
+  display: flex;
+  flex-direction:  column-reverse;
+}
+
+.flex-container4 {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-container5 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container6 {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flex-container7 {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container8 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex-container9 {
+  display: flex;
+  height: 200px;
+  align-items: center;
+}
+
+.flex-container10 {
+  display: flex;
+  height: 600px;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+
+</style>
+</head>
+<body>
+
+  <h1>Create  Flex Container</h1>
+
+    <div class="flex-container1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+    </div>
+
+        <p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
+
+        <p>Direct child elements(s) of the flexible container automatically becomes flexible items.</p>
+
+    
+    <h2> felx-direction  kolom</h2>
+    <div class="flex-container2">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>  
+    </div>
+
+    <h2> felx-direction  kolom-reverse</h2>
+    <div class="flex-container3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+    </div>
+
+    <h2> felx-direction  row</h2>
+    <div class="flex-container4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+    </div>
+
+    <h2> flex-wrap</h2>
+    <div class="flex-container5">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+    </div>
+
+    <h2> flex-nowrap</h2>
+    <div class="flex-container6">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+    </div>
+
+    <h2> justify-content center</h2>
+    <div class="flex-container7">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+    </div>
+
+    <h2> justify-content flex-start</h2>
+    <div class="flex-container7">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+    </div>
+
+    <h2> align-items center</h2>
+    <div class="flex-container7">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+    </div>
+
+
+    <h2> align-content strect</h2>
+    <div class="flex-container7">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+    </div>
+
+
+</body>
+</html>
+
+

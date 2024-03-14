@@ -1,0 +1,17 @@
+.box {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border: 2px solid #000;
+    margin: 50px auto;
+    background-color: lightblue;
+}
+
+/* 
+width: Menentukan lebar dari kotak.
+height: Menentukan tinggi dari kotak.
+padding: Menentukan jarak antara konten dalam kotak dan tepi kotak.
+border: Menentukan tebal dan jenis garis tepi dari kotak.
+margin: Menentukan jarak antara kotak dan elemen-elemen lain di sekitarnya.
+background-color: Menentukan warna latar belakang kotak.
+ */
