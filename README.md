@@ -8,7 +8,7 @@ Repository ini berisi source code praktikum pemrograman web yang berkaitan denga
 2. Client-Side Form Validation
 3. Accessibility
 
-## Advanced HTML
+## Advanced CSS
 1. Box Model
 2. Flex
 5. Grid
