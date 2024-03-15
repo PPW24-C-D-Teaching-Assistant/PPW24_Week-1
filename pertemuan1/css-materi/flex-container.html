@@ -10,42 +10,56 @@
 .flex-container2 {
   display: flex;
   flex-direction: column;
+  background-color: DodgerBlue;
 }
 
 .flex-container3 {
   display: flex;
   flex-direction:  column-reverse;
+  background-color: DodgerBlue;
 }
 
 .flex-container4 {
   display: flex;
   flex-direction: row;
+  background-color: DodgerBlue;
 }
 
 .flex-container5 {
   display: flex;
   flex-wrap: wrap;
+  background-color: DodgerBlue;
 }
 
 .flex-container6 {
   display: flex;
   flex-wrap: nowrap;
+  background-color: DodgerBlue;
 }
 
 .flex-container7 {
   display: flex;
   justify-content: center;
+  background-color: DodgerBlue;
 }
 
 .flex-container8 {
   display: flex;
   justify-content: flex-start;
+  background-color: DodgerBlue;
+}
+
+.flex-container11 {
+  display: flex;
+  justify-content: flex-end;
+  background-color: DodgerBlue;
 }
 
 .flex-container9 {
   display: flex;
   height: 200px;
   align-items: center;
+  background-color: DodgerBlue;
 }
 
 .flex-container10 {
@@ -53,9 +67,20 @@
   height: 600px;
   flex-wrap: wrap;
   align-content: stretch;
+  background-color: DodgerBlue;
 }
 
-.flex-container > div {
+.flex-container1 > div,
+.flex-container2 > div,
+.flex-container3 > div,
+.flex-container4 > div,
+.flex-container5 > div,
+.flex-container6 > div,
+.flex-container7 > div,
+.flex-container8 > div,
+.flex-container9 > div,
+.flex-container10 > div, 
+.flex-container11 > div {
   background-color: #f1f1f1;
   margin: 10px;
   padding: 20px;
@@ -69,15 +94,21 @@
 
   <h1>Create  Flex Container</h1>
 
+  <P>Flex-container adalah istilah yang digunakan dalam CSS untuk merujuk kepada elemen HTML yang memiliki properti display: flex;. 
+    Ketika suatu elemen HTML memiliki properti display: flex;, itu berarti elemen tersebut adalah flex-container,
+     yang akan menetapkan konteks tata letak fleksibel untuk elemen-elemen anak di dalamnya.</P>
+
+  <P>Dengan menggunakan flex-container, Anda dapat mengatur tata letak elemen-elemen anak secara fleksibel dalam satu atau dua dimensi,
+     mengatur distribusi ruang, menyesuaikan posisi elemen, dan lain sebagainya. 
+    Ini memberikan fleksibilitas yang besar dalam mengatur tata letak halaman web.</P>
+
     <div class="flex-container1">
         <div>1</div>
         <div>2</div>
         <div>3</div>  
     </div>
 
-        <p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
-
-        <p>Direct child elements(s) of the flexible container automatically becomes flexible items.</p>
+       
 
     
     <h2> felx-direction  kolom</h2>
@@ -105,14 +136,26 @@
     <div class="flex-container5">
         <div>1</div>
         <div>2</div>
-        <div>3</div>  
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div> 
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>   
     </div>
 
     <h2> flex-nowrap</h2>
     <div class="flex-container6">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>  
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div> 
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>     
     </div>
 
     <h2> justify-content center</h2>
@@ -123,14 +166,21 @@
     </div>
 
     <h2> justify-content flex-start</h2>
-    <div class="flex-container7">
+    <div class="flex-container8">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+    </div>
+
+    <h2> justify-content flex-end</h2>
+    <div class="flex-container11">
         <div>1</div>
         <div>2</div>
         <div>3</div>  
     </div>
 
     <h2> align-items center</h2>
-    <div class="flex-container7">
+    <div class="flex-container9">
         <div>1</div>
         <div>2</div>
         <div>3</div>  
@@ -138,7 +188,7 @@
 
 
     <h2> align-content strect</h2>
-    <div class="flex-container7">
+    <div class="flex-container10">
         <div>1</div>
         <div>2</div>
         <div>3</div>  
